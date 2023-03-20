@@ -24,21 +24,22 @@ body > div {
     grid-template-rows: 1fr 5fr;
 }
 
-.side-bar .nav-links {
+.nav-links {
     display: flex;
     flex-direction: column;
     gap: 5rem;
     padding-left: 3rem;
 }
 
-.nav-row {
+.nav-links > div > a {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 3rem;
+    text-decoration: none;
+    color: white;
 }
 
-.nav-row > svg {
+.nav-links > div > a > svg {
     height: 2rem;
     fill: white;
 }
