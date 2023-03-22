@@ -52,6 +52,7 @@ body > div {
 
 .main-content > div {
     border:5px solid red;
+    background-color: #dddddd;
 }
 
 .projects {
@@ -60,11 +61,17 @@ body > div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row:  repeat(3, 1fr);;
+    /* gap: 10px; */
 }
 
 .project {
-    height: 5rem;
-    width: 30rem;
+    /* height: 5rem;
+    width: 30rem; */
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border:5px solid red;
+    border-radius: 0.5rem;
 }
 
 .reactions {
@@ -79,9 +86,31 @@ body > div {
 .announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.announcements > div {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border:5px solid red;
+    border-radius: 0.5rem;
+    flex-grow: 1;
 }
 
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.trending > div {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border:5px solid red;
+    border-radius: 0.5rem;
+    flex-grow: 1;
 }
