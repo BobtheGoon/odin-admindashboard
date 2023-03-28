@@ -37,6 +37,7 @@ body > div {
     gap: 3rem;
     text-decoration: none;
     color: white;
+    margin-top: 10px;
 }
 
 .nav-links > div > a > svg {
@@ -76,12 +77,18 @@ body > div {
 }
 
 .bottom {
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
+    justify-content: space-between;
 }
 
-.bottom img {
+.bottom > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: 0px 50px;
+}
+
+.bottom .left img {
     height: 80px;
     border-radius: 50%;
 }
@@ -129,6 +136,7 @@ body > div {
     height: 50px;
     justify-content: flex-end;
     gap: 40px;
+    padding-top: 50px;
 }
 
 .reactions svg {
